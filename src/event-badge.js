@@ -39,6 +39,12 @@ class EventBadge extends LitElement {
       z-index: 2;
       position: absolute;
     }
+    #logo{
+      background: black;
+      width: 200px;
+      height: 200px;
+      
+    }
 
   
 
@@ -241,6 +247,11 @@ class EventBadge extends LitElement {
             </foreignObject>
           </g>
 
+          <g id="logo">
+            <foreignObject x="865" y="1100" width="200" height="200" style="line-height:1.2em;font-size:40px;background:black;">
+            Placeholder
+            </foreignObject>
+          </g>
           
 
         </svg>
