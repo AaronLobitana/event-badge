@@ -8,23 +8,28 @@ class EventBadge extends LitElement {
     name: { type: String },
     line2: { type: String },
     line3: { type: String },
-    media: { type: String }
+    media: { type: String },
+    mainimage: { type: String },
+    secimage: { type: String },
+    sepia: { 
+      type: Boolean,
+      reflect: true,
+    },
+    bw: { 
+      type: Boolean,
+      reflect: true,
+    },
   }
 
   static styles = css`
-    :host {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      font-size: calc(10px + 2vmin);
-      color: #1a2b42;
-      max-width: 960px;
-      margin: 0 auto;
-      text-align: center;
-      background-color: var(--event-badge-background-color);
-    },
+    
+
+    :host([sepia]){
+      filter: sepia(1);
+    }
+    :host([bw]){
+      filter: grayscale(1);
+    }
     #image-container {
       z-index: 0;
       position: absolute;
@@ -39,21 +44,6 @@ class EventBadge extends LitElement {
       z-index: 2;
       position: absolute;
     }
-    #logo{
-      background: black;
-      width: 200px;
-      height: 200px;
-      
-    }
-    
-    
-
-  
-
-    
-    
-
-  
   `;
 
   constructor() {
@@ -63,6 +53,11 @@ class EventBadge extends LitElement {
     this.line2 = "Head Honcho";
     this.line3 = "Visual Thinkery";
     this.media = "Media";
+    this.mainimage = "https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000";
+    this.secimage = "https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000";
+    this.sepia = false;
+    this.bw = false;
+    
   }
 
   render() {
@@ -89,12 +84,12 @@ class EventBadge extends LitElement {
           
 
           <defs>
-            <pattern id="img1" patternUnits="userSpaceOnUse" width="1000" height="1000">
-              <image class="tvimage" width="1000" height="1000" href="https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000" />
+            <pattern id="img1" width="1" height="1" >
+              <image class="tvimage" width="800" height="800" href="${this.mainimage}" />
             </pattern>
 
-            <pattern id="img2" patternUnits="userSpaceOnUse" width="400" height="400">
-              <image class="logoimage" width="400" height="400" href="https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000" />
+            <pattern id="img2" width="1" height="1">
+              <image class="logoimage" width="200" height="200" href="${this.secimage}"  />
             </pattern>
 
           </defs>
@@ -265,7 +260,6 @@ class EventBadge extends LitElement {
           </g>
 
           <g id="logo">
-            
             <rect x="865" y="1100" width="200" height="200" fill="url(#img2)"/>
           </g>
 
