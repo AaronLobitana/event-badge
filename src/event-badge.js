@@ -268,6 +268,9 @@ class EventBadge extends LitElement {
 
         </svg>
       </svg>
+
+
+      <badge-list></badge-list>
     </div>
 
 

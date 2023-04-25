@@ -2,10 +2,10 @@ import { LitElement, html, css } from 'lit';
 import "./event-badge";
 
 
-export class MyBadgeList extends LitElement{
+export class BadgeList extends LitElement{
 
     static get tag() {
-        return 'mybadge-list';
+        return 'badge-list';
     }
 
     static get properties() {
@@ -73,4 +73,4 @@ export class MyBadgeList extends LitElement{
     
 }
 
-customElements.define(MyBadgeList.tag, MyBadgeList);
+customElements.define(BadgeList.tag, BadgeList);
