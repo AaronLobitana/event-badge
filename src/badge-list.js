@@ -47,8 +47,6 @@ export class BadgeList extends LitElement{
             width: 100%;
             border: 2px solid lightgray;
             display: block;
-            overflow: auto;
-            height: 500px;
         }
         .item {
             display: inline-flex;
@@ -64,7 +62,7 @@ export class BadgeList extends LitElement{
             
             ${this.badges.map(badge => html`
             <div class="item">
-                <event-badge name="${badge.name}" line2="${badge.line2}" line3="${badge.line3}" media="${badge.media}" mainimage="${badge.mainimage}" secimage="${badge.secimage}" sepia="${this.sepia}" bw="${this.bw}"></event-badge>
+                <event-badge name="${badge.name}" line2="${badge.line2}" line3="${badge.line3}" media="${badge.media}" mainimage="${badge.mainimage}" secimage="${badge.secimage}" ?sepia="${badge.sepia}" ?bw="${badge.bw}" tvcolor="${badge.tvcolor}"></event-badge>
             </div>
             `)}
         </div>

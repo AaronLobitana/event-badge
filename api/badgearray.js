@@ -11,6 +11,7 @@ export default async function handler(request, res) {
         "secimage": "https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000",
         "sepia": false,
         "bw": true,
+        "tvcolor": "#c63d49",
       },
       {
         "name": "Bray",
@@ -19,8 +20,9 @@ export default async function handler(request, res) {
         "media": "Mediaaaaaaaaaaaaaaa",
         "mainimage": "https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000",
         "secimage": "https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000",
-        "sepia": true,
+        "sepia": false,
         "bw": false,
+        "tvcolor": "#A020F0",
       },
     ];
   
