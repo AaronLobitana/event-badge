@@ -77,8 +77,8 @@ class EventBadge extends LitElement {
     this.line2 = "Head Honcho";
     this.line3 = "Visual Thinkery";
     this.media = "Media";
-    this.mainimage = "https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000";
-    this.secimage = "https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000";
+    this.mainimage = "https://static.wikia.nocookie.net/632dfc9a-96d9-4fbc-971a-8fc70c9ed338/scale-to-width/755";
+    this.secimage = "https://static.wikia.nocookie.net/632dfc9a-96d9-4fbc-971a-8fc70c9ed338/scale-to-width/755";
     this.sepia = false;
     this.bw = false;
     this.tvcolor = "#c63d49";
@@ -129,7 +129,7 @@ class EventBadge extends LitElement {
 
           <defs>
             <pattern id="img1" width="1" height="1" >
-              <image class="tvimage" width="800" height="800" href="${this.mainimage}" />
+              <image class="tvimage" width="800" height="700" href="${this.mainimage}" />
             </pattern>
 
             <pattern id="img2" width="1" height="1">
@@ -139,7 +139,7 @@ class EventBadge extends LitElement {
           </defs>
 
           <g>
-            <rect width="675" height="550" x="150" y="400" fill="url(#img1)"/>
+            <rect width="900" height="600" x="140" y="350" fill="url(#img1)"/>
           </g>
 
 
