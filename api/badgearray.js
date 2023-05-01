@@ -90,7 +90,7 @@ export default async function handler(request, res) {
         "name": "Thanos",
         "line2": "Purple Man",
         "line3": "Not an avenger",
-        "media": "Glove Boy",
+        "media": "Bad",
         "mainimage": "https://pbs.twimg.com/media/D6jHPIyW4AE4Ald.jpg",
         "secimage": "https://preview.redd.it/b1u4r90hphk11.jpg?width=640&crop=smart&auto=webp&s=7a764fcddf06d32aaacc68ac483eedbd0edaac43",
         "sepia": false,
